@@ -2,38 +2,6 @@
 
 Numerical approximation of the **relaxed quadratic form** in the model for **ultrathin 
 elastic rods** from [1] (see equation (3.3)), which is inspired by nanowires.
-$$
-Q_{\rm cell}^{\rm rel}(A):=\min_{\substack{\alpha\colon\mathcal{L}^{\rm ext}\rightarrow\R^3\\ g\in\mathbb{R}^3}}\sum_{x'\in\mathcal{L}'^{,\rm ext}} Q_{\rm tot}\biggl(x',\frac{1}{2}
-\bigl(A(0,x')^T+g\bigr)(-1,-1,-1,-1,1,1,1,1)\\
-+\frac{1}{4}A{\scriptstyle\begin{pmatrix}
-\scriptstyle 0&
-\scriptstyle 0&
-\scriptstyle 0&
-\scriptstyle 0&
-\scriptstyle 0&
-\scriptstyle 0&
-\scriptstyle 0&
-\scriptstyle 0\\
-\scriptstyle 1&
-\scriptstyle 1&
-\scriptstyle -1&
-\scriptstyle -1&
-\scriptstyle -1&
-\scriptstyle -1&
-\scriptstyle 1&
-\scriptstyle 1\\
-\scriptstyle 1&
-\scriptstyle -1&
-\scriptstyle -1&
-\scriptstyle 1&
-\scriptstyle -1&
-\scriptstyle 1&
-\scriptstyle 1&
-\scriptstyle -1
-\end{pmatrix}}
-+\bigr(\bar{\nabla}^{2\rm d}\alpha|\bar{\nabla}^{2\rm d}\alpha\bigr)\biggr)
-$$
-(You can read the definitions of the variables in the source article.)
 
 The implementation in its current version is only illustrative and not optimized 
 for best performance on medium or large cross sections of the rod.
@@ -53,7 +21,8 @@ For higher physical relevance, surface terms would also have to be added
 to the energy functional $J$, depending on the chosen cross section shape.
 
 ![Example plot.](plot_example.jpeg "Example plot")
-*<p style="text-align:center">Example plot.</p>*
+
+<p align="center"><i>Example plot.</i></p>
 
 ---
 ## References
